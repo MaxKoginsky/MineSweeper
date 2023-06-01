@@ -33,14 +33,14 @@
 }
 
 .mine {
-  background-image: url("/img/mine.png"); 
+  background-image: url("img/mine.png"); 
   background-size: cover;
   background-position: center;
   color: transparent;
 }
 
 .marked {
-  background-image: url("/img/flag.png"); 
+  background-image: url("img/flag.png"); 
   background-size: cover;
   background-position: center;
   color: transparent;
