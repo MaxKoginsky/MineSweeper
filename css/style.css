@@ -1,39 +1,90 @@
+
 #board {
-    display: grid;
-    grid-gap: 1px;
-  }
-  
-  .beginner {
-    grid-template-columns: repeat(4, 40px);
-    grid-template-rows: repeat(4, 40px);
-  } 
+  justify-content: center;
+  display: grid;
+  grid-gap: 1px;
+}
 
-  .medium {
-    grid-template-columns: repeat(8, 40px);
-  }
-  
-  .expert {
-    grid-template-columns: repeat(12, 40px);
-  }
-  
-  .cell {
-    width: 40px;
-    height: 40px;
-    background-color: grey;
-    border: 1px solid rgb(34, 34, 34);
-    text-align: center;
-    line-height: 40px;
-  }
 
-  .shown {
-    background-color: rgb(186, 186, 186);
-  }
-  
-  .mine {
-    background-color: red;
-    color: white;
-  }
-  
-  .marked {
-    background-color: yellow;
-  }
+.beginner {
+  grid-template-columns: repeat(4, 40px);
+  grid-template-rows: repeat(4, 40px);
+}
+
+.medium {
+  grid-template-columns: repeat(8, 40px);
+}
+
+.expert {
+  grid-template-columns: repeat(12, 40px);
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  background-color: grey;
+  border: 1px solid rgb(34, 34, 34);
+  text-align: center;
+  line-height: 40px;
+}
+
+.shown {
+  background-color: rgb(186, 186, 186);
+}
+
+.mine {
+  background-image: url("/img/mine.png"); 
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+}
+
+.marked {
+  background-image: url("/img/flag.png"); 
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  background-color: #a9a9a9;
+  border: none;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #828282;
+}
+
+.button-center {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.board-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#timer {
+  border: 1px solid #000;
+  padding: 5px;
+}
+
+#remaining-mines {
+  border: 1px solid #000;
+  padding: 5px;
+}
+

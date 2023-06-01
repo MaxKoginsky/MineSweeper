@@ -6,12 +6,25 @@
 <body onload="onInit()" >
 
     <h1>MineSweeper</h1>
-  <div id="board"></div>
   
+  
+  <div id="button-container" class="button-center">
+    <button onclick="setDifficulty('beginner')">Beginner</button>
+    <button onclick="setDifficulty('medium')">Medium</button>
+    <button onclick="setDifficulty('expert')">Expert</button>
+  </div>
 
-  <button onclick="setDifficulty('beginner')">Beginner</button>
-  <button onclick="setDifficulty('medium')">Medium</button>
-  <button onclick="setDifficulty('expert')">Expert</button>
+  <div class="button-center">
+    <div id="timer">0</div>
+    <button onclick="restartGame()">Restart</button>
+    <div id="remaining-mines"></div>
+  </div>
+
+  <div class="board-container">
+    <div id="board"></div>
+  </div>
+  
+  
 
   <script src="js/main.js"></script>
   <script src="js/utils.js"></script>
